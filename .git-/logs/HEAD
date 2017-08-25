@@ -1,0 +1,21 @@
+0000000000000000000000000000000000000000 e2309fe1813ac317f3d1fdb1c00254a9d9bd6d13 Donghyeon lim <gmaeodeod@gmail.com> 1502429306 +0900	clone: from git@github.com:snsn/snsn.github.io.git
+e2309fe1813ac317f3d1fdb1c00254a9d9bd6d13 cd5411713f2676439b6df3214ab91e32eed4263a Donghyeon lim <gmaeodeod@gmail.com> 1502431769 +0900	commit: config 수정
+cd5411713f2676439b6df3214ab91e32eed4263a 9bbcf5651e642d0626e54c9e568df505413d1e15 Donghyeon lim <gmaeodeod@gmail.com> 1502432267 +0900	commit: base url 수정
+9bbcf5651e642d0626e54c9e568df505413d1e15 ffacbdc32d4e3b4ff952f169734b6a5db9d70e46 Donghyeon lim <gmaeodeod@gmail.com> 1502432316 +0900	commit: 기본 포스팅들 삭제
+ffacbdc32d4e3b4ff952f169734b6a5db9d70e46 96917d2edb908ecb66514d231904fcb012be0040 Donghyeon lim <gmaeodeod@gmail.com> 1502432461 +0900	commit: 스터디 후기글 추가
+96917d2edb908ecb66514d231904fcb012be0040 5055d7a983ec5ce563ff1e0e7e4ad4aa2955e76c Donghyeon lim <gmaeodeod@gmail.com> 1502432671 +0900	commit: 누락된 yaml 추가
+5055d7a983ec5ce563ff1e0e7e4ad4aa2955e76c cd64d309f537ff922471e1cce4578ac55fe46dc2 Donghyeon lim <gmaeodeod@gmail.com> 1502432756 +0900	commit: disqus 아이디 수정
+cd64d309f537ff922471e1cce4578ac55fe46dc2 216045bc8ddaa0ddb1318e86e42036bb5acfb5ee Donghyeon lim <gmaeodeod@gmail.com> 1502463748 +0900	commit: 글 출처에 대한 첨언 추가
+216045bc8ddaa0ddb1318e86e42036bb5acfb5ee ecc388486d98dce98483a5bb5644837d99092ef6 Donghyeon lim <gmaeodeod@gmail.com> 1502469974 +0900	commit: Modify about fileOC
+ecc388486d98dce98483a5bb5644837d99092ef6 0002f539dd700927eafed421fe309be7f3d581cf Donghyeon lim <gmaeodeod@gmail.com> 1502471437 +0900	commit: 새 포스트 추가
+0002f539dd700927eafed421fe309be7f3d581cf 601bb36df3f7ffdfcc46656d538c780117c6770c Donghyeon lim <gmaeodeod@gmail.com> 1502471592 +0900	commit: 비디오 링크 수정
+601bb36df3f7ffdfcc46656d538c780117c6770c f9084c0c9851a158f0e5ba66260306845b764dda Donghyeon lim <gmaeodeod@gmail.com> 1502778930 +0900	commit: 임시 포스트 draft로 이동
+f9084c0c9851a158f0e5ba66260306845b764dda 5976554ef3555e79f06b75cb5937877a66009f6f Donghyeon lim <gmaeodeod@gmail.com> 1503244464 +0900	commit: 대식물시대 프롤로그 포스트 추가
+5976554ef3555e79f06b75cb5937877a66009f6f 8f3182f48782575cc5796d62fdcf27623633894f Donghyeon lim <gmaeodeod@gmail.com> 1503245286 +0900	commit: 이미지 추가
+8f3182f48782575cc5796d62fdcf27623633894f c54752c1b74108dc2f0fb573ca92e246eb5da641 Donghyeon lim <gmaeodeod@gmail.com> 1503245642 +0900	commit: modify image url
+c54752c1b74108dc2f0fb573ca92e246eb5da641 dffcc9dcdfdc371dcf075d9933fedc05cc9036fa Donghyeon lim <gmaeodeod@gmail.com> 1503246516 +0900	commit: 이미지 path 변경
+dffcc9dcdfdc371dcf075d9933fedc05cc9036fa 2a98eaadc1622e086bc19109406f26cefb93c27f Donghyeon lim <gmaeodeod@gmail.com> 1503246649 +0900	commit: 파일 네임 변경
+2a98eaadc1622e086bc19109406f26cefb93c27f 563dd3100be4a7a2bccf28fa3fb59ec7df9539c8 Donghyeon lim <gmaeodeod@gmail.com> 1503246791 +0900	commit: 이미지 경로 최종 수정
+563dd3100be4a7a2bccf28fa3fb59ec7df9539c8 e39b5fd7997e056a4535f00f20e08f03dbd63844 Donghyeon lim <gmaeodeod@gmail.com> 1503591591 +0900	commit: forced command 관련 포스팅 추가
+e39b5fd7997e056a4535f00f20e08f03dbd63844 cbfe7b5d09508462ac2cb3e9a64858cfa8826fb0 Donghyeon lim <gmaeodeod@gmail.com> 1503591866 +0900	commit: description 제거
+cbfe7b5d09508462ac2cb3e9a64858cfa8826fb0 8f39f629c18c544ad64da7f7a04a45b39cc890c0 Donghyeon lim <gmaeodeod@gmail.com> 1503592991 +0900	commit: tag 한개만 쓰기
