@@ -2,6 +2,7 @@
 layout: post
 title: "weekly plan - 35"
 author: donghyeon
+description: "35주차 회고록"
 date: 2017-08-27
 tags: [weekly]
 comments: true
@@ -27,7 +28,7 @@ comments: true
 
 | 구분   | 목표 수 | 세션 수 |
 | ---- | ---- | ---- |
-| -    | -    | -    |
+| 구분   | 목표   | 세션   |
 
 
 
