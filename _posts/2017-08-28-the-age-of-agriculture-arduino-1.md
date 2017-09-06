@@ -60,7 +60,7 @@ comments: true
 
 [온습도계의 데이터시트](https://akizukidenshi.com/download/ds/aosong/DHT11.pdf)를 보면 알 수 있다. 중간에 이런 내용이 있다.
 
-![온습도계](/assets/images/0907aoa/데이터.jpg)
+![온습도계](/assets/images/0907aoa/데이터.png)
 
 ​				
 
