@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이상형 월드컵</title>
+    <style>
+      /* 이미지 컨테이너 스타일 */
+      .image-container {
+        margin: 10px;
+        text-align: center;
+        overflow: hidden; /* 확대된 이미지가 컨테이너 밖으로 나가지 않도록 함 */
+        position: relative; /* 이미지 절대 위치를 위한 기준점 설정 */
+      }
+
+      /* 이미지 기본 스타일 */
+      img {
+        width: 200px; /* 초기 이미지 크기 */
+        margin: 10px;
+        cursor: pointer;
+        transition: transform 0.5s ease, opacity 0.5s ease; /* 확대 및 페이드아웃 애니메이션 지속 시간 */
+      }
+
+      /* 이미지 확대 스타일 */
+      .fullscreen {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(20); /* 화면 중앙에 배치 후 크게 확대 */
+        opacity: 0; /* 페이드아웃 효과 */
+        z-index: 10; /* 다른 요소 위에 표시 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container" id="imageContainer"></div>
+    <script>
+      const images = ["image1.jpg", "image2.png", "image3.png", "image4.png"];
+
+      let currentRound = 0;
+      let winners = [];
+
+      function displayImagesForCurrentRound() {
+        const imageContainer = document.getElementById("imageContainer");
+        imageContainer.innerHTML = ""; // Clear previous images
+
+        // Calculate index for the current round
+        const index1 = currentRound * 2;
+        const index2 = index1 + 1;
+
+        if (index1 < images.length) {
+          // Check if the index is within the range of the images array
+          const img1 = createImageElement(images[index1], index1);
+          const img2 = createImageElement(images[index2], index2);
+          imageContainer.appendChild(img1);
+          imageContainer.appendChild(img2);
+        } else {
+          // If there are no more pairs, move to next stage or show winner
+          if (winners.length > 1) {
+            // Reset for next round with winners
+            images.length = 0; // Clear current images array
+            images.push(...winners); // Add winners to images array for next round
+            winners = []; // Reset winners array
+            currentRound = 0; // Reset round counter
+            displayImagesForCurrentRound(); // Start next round
+          } else {
+            imageContainer.innerHTML = `<h2>Winner is ${winners[0]}</h2>`;
+          }
+        }
+      }
+
+      function createImageElement(imageSrc, index) {
+        const img = document.createElement("img");
+        img.src = imageSrc;
+        img.alt = `Image ${index + 1}`;
+        img.addEventListener("click", function () {
+          // 확대 및 페이드아웃 애니메이션 적용
+          this.classList.add("fullscreen");
+
+          // 애니메이션 후 다음 라운드로 진행
+          setTimeout(() => {
+            selectWinner(index);
+          }, 500); // 0.5초 후에 다음 라운드로
+        });
+        return img;
+      }
+
+      function selectWinner(selectedIndex) {
+        winners.push(images[selectedIndex]);
+        currentRound++;
+
+        // 다음 라운드 이미지 표시 전에 현재 확대된 이미지를 초기화
+        setTimeout(() => {
+          displayImagesForCurrentRound();
+        }, 500); // 확대 애니메이션이 완료된 후 실행
+      }
+
+      // 이미지를 화면에 표시하는 등의 초기화 코드는 이전 예시와 동일하게 유지합니다.
+
+      displayImagesForCurrentRound();
+    </script>
+  </body>
+</html>
