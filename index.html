@@ -5,47 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>성전물산 FAQ</title>
     <style>
+      @media (max-width: 768px) {
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .header-left,
+        .header-logo,
+        .header-right {
+          flex-basis: 100%;
+          text-align: left;
+          margin-bottom: 10px;
+        }
+        .header-logo {
+          text-align: center;
+        }
+      }
       body {
         font-family: Arial, sans-serif;
-        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8f8f8;
+        padding: 1rem;
+      }
+      .header-left {
+        display: flex;
+        width: 300px;
+        align-items: center;
+      }
+      .header-left img {
+        width: 100%;
+      }
+      .header-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .header-right {
+        text-align: left;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        p {
+          margin: 3px 0; /* 위아래 간격을 좁힘 */
+          line-height: 1.2; /* 줄 간격을 좁힘 */
+        }
       }
       .faq-section {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
+        padding: 1rem;
       }
       .faq-item {
-        margin-bottom: 20px;
+        margin-bottom: 1rem;
       }
       .faq-question {
         font-weight: bold;
       }
       .faq-answer {
-        margin-top: 5px;
+        margin-top: 0.5rem;
       }
-      .faq-answer a {
-        color: blue;
-        text-decoration: underline;
+      footer {
+        background-color: #f8f8f8;
+        text-align: center;
+        padding: 1rem;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>자주 묻는 질문</h1>
+    <header class="header">
+      <div class="header-left">
+        <a href="qr-code-large.png" target="_blank">
+          <img src="qr.png" alt="QR 코드" />
+        </a>
+      </div>
+      <div class="header-logo">
+        <h1>성전물산</h1>
+      </div>
+      <div class="header-right">
+        <p><strong>연락처 대표:</strong> 010-4606-1893 (오전주문)</p>
+        <p><strong>부대표:</strong> 010-9659-7311 (오후주문)</p>
+        <p><strong>주소:</strong> 노량진 수산시장 1층 남5문 앞문 7/8번</p>
+        <p><strong>입금계좌:</strong> 국민은행 54270201236744 최성전</p>
+        <h3>영업시간</h3>
+        <p><strong>평일:</strong> 새벽 6시 ~ 오후 4시 00분</p>
+        <p><strong>토요일:</strong> 새벽 7시 ~ 오후 6시 00분</p>
+        <p><strong>일요일:</strong> 오전 8시 ~ 오후 4시</p>
+        <p>* 수산대전상품권 사용 가능합니다</p>
+        <p>* 온누리 지류 / 카드할인 적용</p>
+      </div>
     </header>
     <main class="faq-section">
+      <h2>자주 묻는 질문</h2>
       <div class="faq-item">
         <div class="faq-question">질문: 숙성지는 어떤게 좋나요?</div>
         <div class="faq-answer">
-          답변:
-          <a href="https://example.com/hitachi" target="_blank">히타치 숙성지</a
-          >를 추천합니다.
+          답변: 히타치 숙성지를 추천. 가격은 택배비 포함 3만원 정도. 구매는
+          <a
+            href="https://smartstore.naver.com/mychef/products/508816702"
+            target="_blank"
+            >네이버 마이쉐프</a
+          >
+          혹은
+          <a href="https://link.coupang.com/a/bYnT8D" target="_blank">쿠팡</a>
+          에서 가능한데, 가격을 비교해서 싼곳에서 사기!
         </div>
       </div>
-      <!-- 여기에 추가적인 FAQ 항목들을 추가하세요 -->
+      <div class="faq-item">
+        <div class="faq-question">질문: 해동지는 어떤것이 좋나요?</div>
+        <div class="faq-answer">
+          답변: 아무거나 사시면 됨. 인터넷에서는 대량으로 팔아서, 노량진
+          영신씨푸드에서 사는것을 추천.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">질문: 숙성은 어떻게 하나요?</div>
+        <div class="faq-answer">
+          답변:
+          <ol>
+            <li>필렛(오로시)으로 신청해서 받는다.</li>
+            <li>
+              받자마자 (수분 제거 목적) 해동지를 갈아주고, 랩핑 하거나 비닐백에
+              넣어 산소를 최대한 안닿게 하고 냉장고에 넣는다
+            </li>
+            <li>
+              (2일 이상 보관시) 3~4시간 후에 꺼내서 해동지 -> 숙성지로 교체하고
+              진공포장을 해서 넣는다.
+            </li>
+            <li>
+              숙성은 김치냉장고가 최고인데, 없을 경우 야채칸 혹은 온도변화가
+              적은 깊숙한 곳에 넣어둔다.
+            </li>
+          </ol>
+        </div>
+      </div>
     </main>
     <footer>
-      <p>&copy; 2023 성전물산 팬. 모든 권리 보유.</p>
+      <p>&copy; 2024 성전물산 고객중 한명이 만듬. 아무 권리 없음.</p>
     </footer>
   </body>
 </html>
